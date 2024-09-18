@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom, rgba(255, 69, 255, 0.473), rgba(133, 57, 255, 0.993));
+    border-radius: 1rem;
 }
 
 .container {
@@ -26,6 +27,7 @@ body {
     color: white;
     transition: width 0.5s ease, opacity 0.5s ease;
     overflow: hidden; /* Para ocultar el contenido al cerrar */
+    border-radius: 1rem;
 }
 
 .sidemenu-container.closed {
