@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SideBar</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="itemMenu"
+        [style.display]="visibleBtnMenu ? 'flex' : 'none'"
+        [style.background]="theme">
+
+            <button  (click)="setVisibilitiMenu()" (click)="setVisibilitiBtnMenu()" (click)="setSizeMenu()" class="btnMenu"><img class="imgMenu" src="https://cdn-icons-png.flaticon.com/512/482/482609.png"></button>
+        </div>
+
+        <div class="sidemenu-container"
+        [style.background]="theme"
+        [style.width]="widhtMenu + '%'"
+        [style.display]="visibleMenu ? 'flex' : 'none'">
+
+            <div class="item" >
+                <img class="imgPerfil" src="https://cdn.icon-icons.com/icons2/3868/PNG/512/profile_circle_icon_242774.png" alt="Perfil.png">
+                <p>{{userName}}</p>
+                <button (click)="setVisibilitiMenu()" (click)="setVisibilitiBtnMenu()" (click)="setSizeMenu()" class="back">🢀</button>
+            </div>
+            
+            <div class="item">
+                <p><span>🗓️</span>Dashboard</p>
+            </div>
+
+            <div class="item">
+                <pre><span>😉</span>Profile  </pre>
+            </div>
+
+            
+
+            <div class="item">
+                <button class="btn" (click)="setThemeColor('linear-gradient(to right, rgb(53, 28, 28), rgb(160, 0, 152))')">Change Color</button>
+                <button class="btn" (click)="setSizeMenu()">Change Size</button>
+            </div>
+        </div>
+
+        <div class="itemTexto">
+            <h1 class="texto">holis</h1>
+        </div>
+    </div>
+</body>
+</html>
+

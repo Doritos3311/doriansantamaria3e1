@@ -1,0 +1,115 @@
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, rgba(255, 69, 255, 0.473), rgba(133, 57, 255, 0.993));
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    transition: margin-left 0.5s ease;
+}
+
+.sidemenu-container {
+    width: 25%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(to right, rgb(53, 28, 28), rgb(182, 0, 0));
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    transition: width 0.5s ease, opacity 0.5s ease;
+    overflow: hidden; /* Para ocultar el contenido al cerrar */
+}
+
+.sidemenu-container.closed {
+    width: 0; /* Cerrar el menú */
+    opacity: 0; /* Desvanecer */
+}
+
+.sidemenu-container.open {
+    width: 25%; /* Abrir el menú */
+    opacity: 1; /* Mostrar */
+}
+
+.imgPerfil {
+    margin-top: 20px;
+    height: 80px;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 1rem;
+    gap: 10px;
+}
+
+.item p, pre {
+    font-size: 20px;
+    font-weight: bold;
+    width: 25%;
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+}
+
+.btn {
+    background-color: white;
+    border-radius: 1em;
+    padding: 10px;
+    border: transparent;
+}
+
+.back {
+    color: white;
+    background-color: transparent;
+    border: transparent;
+    font-size: 50px;
+    margin-left: 40px;
+}
+
+.itemMenu {
+    width: 6%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(to right, rgb(53, 28, 28), rgb(182, 0, 0));
+    color: white;
+    transition: width 0.5s ease-in-out;
+}
+
+.btnMenu {
+    margin-top: 20px;
+    background-color: transparent;
+    border: transparent;
+    transition: width 0.5s ease-in-out;
+}
+
+.imgMenu {
+    height: 50px;
+    width: 50px;
+}
+
+.itemTexto {
+    background: transparent;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.texto {
+    color: linear-gradient(to right, rgb(53, 28, 28), rgb(182, 0, 0));
+    font-size: 100px;
+    font-weight: bold;
+    font-family: fantasy;
+}
